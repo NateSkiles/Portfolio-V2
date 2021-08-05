@@ -25,7 +25,7 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a>
+            <a class="navbar-brand" href="#page-top"><img src="assets/img/brand.png" alt="..." /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
@@ -36,7 +36,7 @@
                     <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#team">Team</a></li> -->
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -45,59 +45,65 @@
     <!-- Masthead-->
     <header class="masthead">
         <div class="container">
-            <video autoplay muted loop id="typing_video">
+            <video autoplay muted loop id="clouds_video">
                 <source src="./assets/vid/Clouds.mp4" type="video/mp4">
                     <!--FAIL TO RUN MESSAGE-->
                     Your browser does not support HTML5 video.
             </video>
             <div class="row justify-content-start">
-                <div class="col-6 col-6-sm text-start mb-5">
-                    <h1 class="masthead-heading">Hi, I'm <span class="text-info">Nate</span>.</h1>
-                    <p class="masthead-subheading lead">A software developer with a <em>passion</em> for all things
+                <div class="col-sm text-center mb-5">
+                    <h1 class="masthead-heading">Hi, I'm <span class="text-primary">Nate</span>.</h1>
+                    <p class="masthead-subheading lead">A software developer with a <i>passion</i> for all things
                         tech.
                     </p>
                 </div>
-                <div class="col-6 col-6-sm mb-5">
-                    <img class="nate-pic rounded-circle z-depth-2 img-fluid w-75 ms-auto mt-5"
-                        src="./assets/img/rsz_1nate.png"
+                <div class="col-sm mb-5">
+                    <img class="nate-pic rounded-circle z-depth-2 img-fluid w-50 ms-auto my-auto"
+                        src="./assets/img/rsz_1nate.png" 
+                        style="max-width: fit-content;"
                         alt="Picture of Nathan Skiles in front of rocks and a waterfall.">
                 </div>
             </div>
-            <a class="btn btn-primary btn-xl text-uppercase my-5" href="#services">Tell Me More</a>
+            <a id="masthead-btn" class="btn btn-primary btn-xl text-uppercase" href="#portfolio">My Work</a>
 
     </header>
     <!-- Services-->
     <section class="page-section" id="services">
         <div class="container">
             <div class="text-center">
-                <h2 class="section-heading text-uppercase">Services</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <h2 class="section-heading text-uppercase mb-5">Get To Know Me</h2>
             </div>
             <div class="row text-center">
                 <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="my-3">E-Commerce</h4>
+                    <a href="https://github.com/NateSkiles">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <h4 class="my-3">GitHub</h4>
                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam
                         architecto quo inventore harum ex magni, dicta impedit.</p>
                 </div>
                 <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="my-3">Responsive Design</h4>
+                    <a href="https://www.linkedin.com/in/nathan-skiles/">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <h4 class="my-3">LinkedIn</h4>
                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam
                         architecto quo inventore harum ex magni, dicta impedit.</p>
                 </div>
                 <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="my-3">Web Security</h4>
+                    <a href="./assets/nathanSkilesResume.pdf">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-file fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <h4 class="my-3">Resume</h4>
                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam
                         architecto quo inventore harum ex magni, dicta impedit.</p>
                 </div>
@@ -210,7 +216,7 @@
         <div class="container">
             <div class="text-center mx-5">
                 <h2 class="section-heading text-uppercase">About</h2>
-                <h3 class="section-subheading">An experience programmer with great customer service open to collaboration and side projects. I enjoy learning new ways to solve problems with clean code,
+                <h3 class="section-subheading">An experience programmer with superb customer service. Open to collaboration and side projects! I'm obsessed with finding new ways to solve problems utilizing <i>clean code</i>,
                     along with staying on top of new libraries/frameworks and becoming a better programmer every day. I
                     have a lifelong passion for technology. Currently working at The Tech Academy's Portland Campus as a
                     Job Placement Director, helping graduates break into tech and land that 'foot-in-the-door' job.
@@ -394,7 +400,7 @@
                 </div>
                 <!-- Submit Button-->
                 <div class="text-center">
-                    <p id="my-form-status"></p>
+                    <p id="my-form-status" class="section-subheading text-success"></p>
                     <button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit">Send
                         Message</button>
                 </div>
@@ -402,10 +408,10 @@
         </div>
     </section>
     <!-- Footer-->
-    <footer class="footer py-4">
+    <footer class="footer py-5">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-4 text-lg-start"> &copy; Nathan Skiles
+                <div class="col-lg-4 text-lg-start fw-bold footer-name"> &copy; Nathan Skiles
                     <script>document.write(new Date().getFullYear())</script>
                 </div>
                 <div class="col-lg-4 my-3 my-lg-0 offset-lg-4">

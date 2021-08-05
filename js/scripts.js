@@ -47,6 +47,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
+// Submit conformation
 var form = document.getElementById("contactForm");
 
 async function handleSubmit(event) {
